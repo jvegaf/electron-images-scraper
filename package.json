@@ -1,6 +1,6 @@
 {
   "name": "electron-images-scraper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple and fast scraper for Google images using Puppeteer fixed for Electron",
   "main": "src/index.js",
   "scripts": {
