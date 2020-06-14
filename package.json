@@ -21,9 +21,9 @@
   "author": "Peter Evers",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pevers/images-scraper/issues"
+    "url": "https://github.com/jvegaf/electron-images-scraper/issues"
   },
-  "homepage": "https://github.com/pevers/images-scraper#readme",
+  "homepage": "https://github.com/jvegaf/electron-images-scraper#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "husky": "^4.2.3",

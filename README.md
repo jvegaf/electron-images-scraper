@@ -7,7 +7,7 @@
 
 This a simple way to scrape Google images using Puppeteer. The headless browser will behave as a 'normal' user and scrolls to the bottom of the page until there are enough results.
 
-**The only change was change the winstonjs dependecy by electron-log for avoid a error runing on a Electron App** 
+**The only modification was change the winstonjs dependecy by electron-log for avoid a error runing on a Electron App** 
 
 
 <p align="center">
@@ -20,7 +20,7 @@ This a simple way to scrape Google images using Puppeteer. The headless browser 
 
 # Example 
 
-This is a application service example 
+This is an application service example 
 
 ```js
 const Scraper = require('electron-images-scraper');
