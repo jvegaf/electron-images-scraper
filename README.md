@@ -1,8 +1,14 @@
 [![Build Status](https://travis-ci.com/pevers/images-scraper.svg?branch=master)](https://travis-ci.com/pevers/images-scraper)
 
-# images-scraper
+# electron-images-scraper 
+
+
+## **This a fork of [images-scraper](https://github.com/pevers/images-scraper)**
 
 This a simple way to scrape Google images using Puppeteer. The headless browser will behave as a 'normal' user and scrolls to the bottom of the page until there are enough results.
+
+**The only change was change the winstonjs dependecy by electron-log for avoid a error runing on a Electron App** 
+
 
 <p align="center">
     <img src="https://media.giphy.com/media/WSqsRhuPWPTrYtXAiN/giphy.gif">
@@ -10,29 +16,32 @@ This a simple way to scrape Google images using Puppeteer. The headless browser 
 
 # Installation
 
-`npm install images-scraper`
+`npm install electron-images-scraper`
 
-# Example
+# Example 
 
-Give me the first 200 images of Banana's from Google (using headless browser)
+This is a application service example 
 
 ```js
-var Scraper = require('images-scraper');
+const Scraper = require('electron-images-scraper');
+
 
 const google = new Scraper({
-  puppeteer: {
-    headless: false,
-  }
+    puppeteer: {
+        //headless: false,
+    }
 });
 
-(async () => {
-  const results = await google.scrape('banana', 200);
-  console.log('results', results);
-})();
+module.exports.getCover = async function getCover (query) {
+    const querySanitized = query.replace(/\s/g, '+');
+    console.log(querySanitized);
+    const results = await google.scrape(querySanitized, 3);
+    return results;
+}
 ```
 
+
 ## Results
-`node src/example.js`
 
 ```js
 results [

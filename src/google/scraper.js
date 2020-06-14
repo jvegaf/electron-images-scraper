@@ -3,7 +3,7 @@
 const puppeteer = require('puppeteer');
 const cheerio = require('cheerio');
 const url = require('url');
-const logger = require('../logger');
+const logger = require('electron-log');
 
 /**
  * @param {string} userAgent user agent

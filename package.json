@@ -1,7 +1,7 @@
 {
-  "name": "images-scraper",
-  "version": "5.0.7",
-  "description": "Simple and fast scraper for Google images using Puppeteer",
+  "name": "electron-images-scraper",
+  "version": "1.0.0",
+  "description": "Simple and fast scraper for Google images using Puppeteer fixed for Electron",
   "main": "src/index.js",
   "scripts": {
     "test": "mocha test",
@@ -10,12 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pevers/images-scraper.git"
+    "url": "git+https://github.com/jvegaf/electron-images-scraper.git"
   },
   "keywords": [
     "scraper",
     "google",
-    "images"
+    "images",
+    "electron"
   ],
   "author": "Peter Evers",
   "license": "ISC",
@@ -28,7 +29,7 @@
     "husky": "^4.2.3",
     "prettier": "^1.19.1",
     "puppeteer": "^2.1.1",
-    "winston": "^3.2.1"
+    "electron-log": "^4.2.1"
   },
   "devDependencies": {
     "axios": "^0.19.2",
